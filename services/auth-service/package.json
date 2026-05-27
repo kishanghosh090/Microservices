@@ -1,0 +1,23 @@
+{
+  "name": "@chatapp/auth-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Auth service for ChatApp",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@chatapp/common": "workspace:^",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "dotenv": "^17.4.2"
+  }
+}
