@@ -1,7 +1,10 @@
-import type { Application, Request, Response } from "express";
+import express, {
+  type Application,
+  type Request,
+  type Response,
+} from "express";
 
 export const createApp = (): Application => {
-  const express = require("express");
   const app = express();
 
   // Middleware to parse JSON bodies
@@ -11,8 +14,6 @@ export const createApp = (): Application => {
   app.get("/health", (_req: Request, res: Response) => {
     res.status(200).json({ status: "ok" });
   });
-
-
 
   return app;
 };
